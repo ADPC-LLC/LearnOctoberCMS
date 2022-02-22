@@ -1,13 +1,9 @@
-title = "Movie Blog"
-layout = "default"
 url = "/movie-blog"
-
-[blogCategories]
-slug = "{{ :slug }}"
-displayEmpty = 1
-categoryPage = "movie-blog"
+layout = "default"
+title = "Movie Blog"
 
 [blogPost]
-slug = "{{ :slug }}"
+slug = "first-blog-post"
 categoryPage = "movie-blog"
 ==
+{% component 'blogPost' %}
