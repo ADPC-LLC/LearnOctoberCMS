@@ -16,3 +16,13 @@ https://github.com/ivandoric
 ### Objective
 
 The idea behind this repository is to use it as a learning tool to not only learn how October CMS can be leveraged with tools like WebPack, but also to improve the expereince of developing and deploying such a CMS using tools like Git, Github, Laravel and the foundation ecosystems used in typical webdevelopment like Node.JS, Ajax, HTML5, CSS, JS, Tailwind CSS, Vue.JS and others.
+
+### Roadmap
+
+#### Theme Development
+
+As a next logical step, a new October CMS theme will be developed for eCommerce purposes.
+
+#### PHP Plugin Development
+
+Once the methodology behind Webpack integrations and applying it to Themesis understood I will delve deeper into developing my own PHP Plugins.
