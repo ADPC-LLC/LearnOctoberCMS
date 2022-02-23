@@ -5,6 +5,10 @@
     "test": "tests"
   },
   "scripts": {
+    "compile-less": "php artisan october:util compile less",
+    "compile-js": "php artisan october:util compile js",
+    "watch-less": "onchange -v \"modules/**/*.less\" \"plugins/**/*.less\" -- php artisan october:util compile less",
+    "watch-js": "onchange -v \"modules/**/*.js\" \"plugins/**/*.js\" --exclude \"**/*-min.js\" -- php artisan october:util compile js",
     "test": "mocha --require @babel/register tests/js/cases/**/*.js",
     "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
     "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
