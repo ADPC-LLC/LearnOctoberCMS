@@ -4,7 +4,7 @@ description = "Default layout"
 security = "all"
 ==
 <!DOCTYPE html>
-<html>
+<html lang="en" xml:lang="en">
     <head>
         <meta charset="utf-8">
         <title>OctoberCMS - {{ this.page.title }}</title>
@@ -18,11 +18,11 @@ security = "all"
         <link href="{{ 'assets/dist/css/style.css'|theme }}" rel="stylesheet">
     </head>
     <body>
-       
+
         {% partial "header" %}
 
         <!-- Content -->
-        <section id="layout-content" class="container clearfix">   
+        <section id="layout-content" class="container clearfix">
             {% page %}
         </section>
 
