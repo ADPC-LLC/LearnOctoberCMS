@@ -1,3 +1,5 @@
+/** @format */
+
 // Generated using webpack-cli https://github.com/webpack/webpack-cli
 
 const path = require("path");
@@ -15,7 +17,7 @@ const config = {
   },
   devServer: {
     open: true,
-    host: "localhost",
+    host: "localhost:8000",
   },
   plugins: [
     new HtmlWebpackPlugin({
