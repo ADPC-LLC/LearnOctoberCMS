@@ -1,15 +1,17 @@
 {
   "name": "octobermovies",
-  "description": "October Movies CMS is a self-hosted CMS platform based on the Laravel PHP Framework.",
+  "description": "My October Movies CMS is a self-hosted CMS platform based on the Laravel PHP Framework.",
   "directories": {
     "test": "tests"
   },
   "scripts": {
     "test": "mocha --require @babel/register tests/js/cases/**/*.js",
-    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
-    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
-    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
-    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "watch": "webpack --watch",
+    "hot": "webpack --inline --hot",
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "serve": "webpack serve"
   },
   "repository": {
     "type": "git",
@@ -29,14 +31,31 @@
     "@babel/node": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/register": "^7.5.5",
+    "@webpack-cli/generators": "^2.4.2",
+    "autoprefixer": "^10.4.2",
     "babel-plugin-module-resolver": "^3.2.0",
+    "browser-sync": "^2.27.7",
+    "browser-sync-webpack-plugin": "^2.3.0",
     "chai": "^4.2.0",
+    "css-loader": "^6.6.0",
+    "html-webpack-plugin": "^5.5.0",
     "jquery": "^3.4.1",
     "jsdom": "^15.1.1",
     "laravel-mix": "^6.0.43",
-    "mocha": "^6.2.0",
+    "mocha": "^9.2.1",
     "onchange": "^6.1.0",
-    "sinon": "^7.4.1"
+    "postcss": "^8.4.6",
+    "postcss-loader": "^6.2.1",
+    "prettier": "^2.5.1",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.49.8",
+    "sass-loader": "^12.6.0",
+    "sinon": "^7.4.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "workbox-webpack-plugin": "^6.4.2"
   },
   "version": "1.0.0",
   "main": "index.js",
@@ -46,5 +65,8 @@
     "Webpack"
   ],
   "author": "Andre Du Plesssis",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "glob-parent": "^6.0.2"
+  }
 }
