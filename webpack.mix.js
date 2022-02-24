@@ -20,8 +20,8 @@ mix
   .sass("./themes/olympos/assets/sass/style.scss", "dist/css");
 
 mix.browserSync({
-  proxy: "localhost",
-  host: "localhost",
+  proxy: "http://localhost",
+  host: "http://localhost",
   notify: false,
   files: [
     "./themes/olympos/assets/dist/css/*.css",
