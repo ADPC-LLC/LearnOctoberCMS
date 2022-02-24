@@ -18,8 +18,8 @@ mix.js('./themes/olympos/assets/js/app.js', 'dist/js')
    .sass('./themes/olympos/assets/sass/style.scss', 'dist/css');
 
 mix.browserSync({
-    proxy: 'octobermovies.dev',
-    host: 'octobermovies.dev',
+    proxy: 'http://127.0.0.1:8000',
+    host: 'http://127.0.0.1:8000',
     notify: false,
     files: ["./themes/olympos/assets/dist/css/*.css", "./themes/olympos/**/*.htm", "./themes/olympos/assets/dist/js/*.js"]
 })
