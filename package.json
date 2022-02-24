@@ -19,16 +19,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ADPC-LLC/LearnOctoberCMS.git"
+    "url": "git+https://github.com/octobercms/october.git"
   },
   "contributors": [
     "Alexey Bobkov <aleksey.bobkov@gmail.com>",
     "Samuel Georges <daftspunky@gmail.com>"
   ],
   "bugs": {
-    "url": "https://github.com/ADPC-LLC/LearnOctoberCMS/issues"
+    "url": "https://github.com/octobercms/october/issues"
   },
-  "homepage": "git+https://github.com/ADPC-LLC/LearnOctoberCMS#readme",
+  "homepage": "https://octobercms.com/",
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",

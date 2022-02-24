@@ -1,23 +1,28 @@
-/* =======================================================================
-## ++ Globals
-========================================================================== */
-html{
-    font-size: 100%;
+/**
+ * /* =======================================================================
+ * ## ++ Globals
+ * ==========================================================================
+ *
+ * @format
+ */
+
+html {
+  font-size: 100%;
 }
 
-body{
-    -webkit-font-smoothing: antialiased;
-    background: #fff;
-    color: #566b78;
+body {
+  -webkit-font-smoothing: antialiased;
+  background: rgb(20, 20, 20);
+  color: #566b78;
 }
 
-.container{
-    max-width: 40em;
-    margin:0 auto;
+.container {
+  max-width: 40em;
+  margin: 0 auto;
 }
 
-*{
-    box-sizing:border-box;
+* {
+  box-sizing: border-box;
 }
 
 a {
@@ -30,19 +35,20 @@ a {
 |--------------------------------------------------------------------------
 */
 
-.gallery{
-    padding:20px 15px;
-    background: #efefef;
-    border:1px solid #ccc;
-    border-radius:3px;
-    li{
-        float: left;
-        margin:5px;
-    }
+.gallery {
+  padding: 20px 15px;
+  background: #efefef;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  li {
+    float: left;
+    margin: 5px;
+  }
 
-    img, a{
-        display: block;
-    }
+  img,
+  a {
+    display: block;
+  }
 }
 
 /*
@@ -51,85 +57,85 @@ a {
 |--------------------------------------------------------------------------
 */
 
-form{
-    margin-top: 40px;
+form {
+  margin-top: 40px;
 
-    input, textarea{
-        width:100%;
-        padding:15px;
-        border:1px solid #ccc;
-        margin-bottom: 40px;
-        font-size: 16px;
-        color:#444;
-    }
+  input,
+  textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #444;
+  }
 
-    label{
-        display: block;
-        margin-bottom: 10px;
-    }
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
 
-    textarea{
-        height:200px;
-    }
+  textarea {
+    height: 200px;
+  }
 
-    button{
-        border:none;
-        background: #E41C4E;
-        padding:10px 40px;
-        color:#fff;
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 700;
-    }
+  button {
+    border: none;
+    background: #e41c4e;
+    padding: 10px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+  }
 }
-
 
 /* =======================================================================
 ## ++ Cleafix
 ========================================================================== */
 
 /* float clearing for IE6 */
-* html .clearfix{
- height: 1%;
- overflow: visible;
+* html .clearfix {
+  height: 1%;
+  overflow: visible;
 }
 
 /* float clearing for IE7 */
-*+html .clearfix{
- min-height: 1%;
+* + html .clearfix {
+  min-height: 1%;
 }
 
 /* float clearing for everyone else */
-.clearfix:after{
- clear: both;
- content: ".";
- display: block;
- height: 0;
- visibility: hidden;
- font-size: 0;
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
 }
 
-.clr{clear:both;}
-.clr{content:"test";}
-
-.flash{
-    padding:20px;
-    color: #fff;
-    display: none;
-    
-    &.active{
-        display: block;
-    }
-    
-    &.error{
-        background: red;
-    }
-
-    &.success{
-        background: green;
-    }
+.clr {
+  clear: both;
+}
+.clr {
+  content: "test";
 }
 
+.flash {
+  padding: 20px;
+  color: #fff;
+  display: none;
 
+  &.active {
+    display: block;
+  }
 
+  &.error {
+    background: red;
+  }
 
+  &.success {
+    background: green;
+  }
+}
