@@ -12,10 +12,10 @@ code = "headermenu"
 code = "footermenu"
 ==
 <!DOCTYPE html>
-<html>
+<html lang="en" xml:lang="en">
     <head>
         <meta charset="utf-8">
-        <title>OctoberCMS - {{ this.page.title }}</title>
+        <title>October Movies - {{ this.page.title }}</title>
         <meta name="description" content="{{ this.page.meta_description }}">
         <meta name="title" content="{{ this.page.meta_title }}">
         <meta name="author" content="OctoberCMS">
@@ -26,7 +26,7 @@ code = "footermenu"
         <link href="{{ 'assets/compiled/css/style.css'|theme }}" rel="stylesheet">
     </head>
     <body>
-       
+
         <header class="main-header">
             <div class="container clearfix">
                 <h1 class="logo">October Movies</h1>
@@ -40,7 +40,7 @@ code = "footermenu"
 
         <!-- Content -->
         <section id="layout-content" class="container clearfix">
-            <h1>{{this.page.title}}</h1>  
+            <h1>{{this.page.title}}</h1>
             {% page %}
         </section>
 
