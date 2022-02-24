@@ -13,7 +13,7 @@ const stylesHandler = "style-loader";
 const config = {
   entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "./themes/olympos/assets/dist"),
   },
   devServer: {
     open: true,
