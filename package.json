@@ -4,18 +4,18 @@
   "directories": {
     "test": "tests"
   },
-  "test": "mocha --require @babel/register tests/js/cases/**/*.js",
-  "watch": "webpack --watch",
-  "hot": "webpack --inline --hot",
-  "build": "webpack --mode=production --node-env=production",
-  "build:dev": "webpack --mode=development",
-  "build:prod": "webpack --mode=production --node-env=production",
-  "dev": "webpack --progress --hide-modules --node-env=development ",
-  "watch-dev": "webpack --watch --progress --hide-modules --node-env=development ",
-  "hot-dev": "webpack-dev-server --inline --hot --node-env=development",
-  "production": "webpack --progress --hide-modules --node-env=production",
-  "serve": "webpack serve"
-
+  "scripts": {
+    "test": "mocha --require @babel/register tests/js/cases/**/*.js",
+    "watch": "webpack --watch",
+    "hot": "webpack --inline --hot",
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "dev": "webpack --progress --hide-modules --node-env=development ",
+    "watch-dev": "webpack --watch --progress --hide-modules --node-env=development ",
+    "hot-dev": "webpack-dev-server --inline --hot --node-env=development",
+    "production": "webpack --progress --hide-modules --node-env=production",
+    "serve": "webpack serve"
   },
   "repository": {
     "type": "git",
