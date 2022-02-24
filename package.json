@@ -7,13 +7,13 @@
   "scripts": {
     "test": "mocha --require @babel/register tests/js/cases/**/*.js",
     "watch": "webpack --watch",
-    "hot": "webpack --inline --hot",
+    "hot": "webpack --hot",
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
     "dev": "webpack --progress --mode=development --node-env=development",
     "watch-dev": "webpack --watch --progress --mode=development --node-env=development",
-    "hot-dev": "webpack-dev-server --inline --hot --node-env=development",
+    "hot-dev": "webpack-dev-server --hot --node-env=development",
     "production": "webpack --progress --mode=production --node-env=production",
     "serve": "webpack serve"
   },
