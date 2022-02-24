@@ -51,7 +51,7 @@
     "repositories": {
         "octobercms": {
             "type": "composer",
-            "url": "https://gateway.octobercms.com"
+            "url": "https://OctoberMovies.dev"
         }
     }
 }

@@ -20,12 +20,13 @@ mix
   .sass("./themes/olympos/assets/sass/style.scss", "dist/css");
 
 mix.browserSync({
-  proxy: "http://localhost:8000",
-  host: "http://localhost:8000",
+  proxy: "OctoberMovies.dev",
+  host: "OctoberMovies.dev",
   notify: false,
   files: [
     "./themes/olympos/assets/dist/css/*.css",
     "./themes/olympos/**/*.htm",
+    "./themes/olympos/**/*.html",
     "./themes/olympos/assets/dist/js/*.js",
   ],
 });
