@@ -11,10 +11,10 @@
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
-    "dev": "webpack --progress --hide-modules --node-env=development ",
-    "watch-dev": "webpack --watch --progress --hide-modules --node-env=development ",
+    "dev": "webpack --progress --mode=development --node-env=development",
+    "watch-dev": "webpack --watch --progress --mode=development --node-env=development",
     "hot-dev": "webpack-dev-server --inline --hot --node-env=development",
-    "production": "webpack --progress --hide-modules --node-env=production",
+    "production": "webpack --progress --mode=production --node-env=production",
     "serve": "webpack serve"
   },
   "repository": {
