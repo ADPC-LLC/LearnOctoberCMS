@@ -1,0 +1,29 @@
+fields:
+    title:
+        label: 'watchlearn.movie::lang.movie.title'
+        span: full
+        placeholder: 'Enter the movie title in here'
+        required: 1
+        type: text
+    slug:
+        label: 'watchlearn.movie::lang.movie.slug'
+        span: left
+        placeholder: 'Enter a slug name'
+        preset:
+            field: title
+            type: slug
+        type: text
+    year:
+        label: 'watchlearn.movie::lang.movie.year'
+        span: auto
+        placeholder: '2021'
+        type: text
+    description:
+        label: 'watchlearn.movie::lang.movie.description'
+        size: large
+        span: full
+        placeholder: 'Enter a brief description of the movie.'
+        preset:
+            field: richeditor1
+            type: slug
+        type: richeditor

@@ -1,0 +1,5 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table watchlearn_movie_movies'
+    - builder_table_create_watchlearn_movie_movies.php

@@ -1,0 +1,22 @@
+plugin:
+    name: 'watchlearn.movie::lang.plugin.name'
+    description: 'watchlearn.movie::lang.plugin.description'
+    author: Watchlearn
+    icon: oc-icon-file-movie-o
+    homepage: ''
+permissions:
+    watchlearn.movie.manage_movie:
+        tab: 'watchlearn.movie::lang.plugin.name'
+        label: 'watchlearn.movie::lang.movie.manage-movie'
+navigation:
+    'Movie Library':
+        label: 'Movie Library'
+        url: watchlearn/movie/movies
+        icon: icon-file-movie-o
+        permissions:
+            - watchlearn.movie.manage_movie
+        sideMenu:
+            Movies:
+                label: Movies
+                url: watchlearn/movie/movies
+                icon: icon-video-camera

@@ -1,0 +1,10 @@
+name: Movies
+form: $/watchlearn/movie/models/movie/fields.yaml
+modelClass: Watchlearn\Movie\Models\Movie
+defaultRedirect: watchlearn/movie/movies
+create:
+    redirect: 'watchlearn/movie/movies/update/:id'
+    redirectClose: watchlearn/movie/movies
+update:
+    redirect: watchlearn/movie/movies
+    redirectClose: watchlearn/movie/movies
