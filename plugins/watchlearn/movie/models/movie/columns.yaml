@@ -1,16 +1,18 @@
+# @format
+
 columns:
-    title:
-        label: 'watchlearn.movie::lang.movie.title'
-        type: text
-        searchable: true
-        sortable: true
-    year:
-        label: 'watchlearn.movie::lang.movie.year'
-        type: text
-        searchable: true
-        sortable: true
-    description:
-        label: 'watchlearn.movie::lang.movie.description'
-        type: text
-        searchable: true
-        sortable: true
+  title:
+    label: "watchlearn.movies::lang.movie.title"
+    type: text
+    searchable: true
+    sortable: true
+  year:
+    label: "watchlearn.movies::lang.movie.year"
+    type: text
+    searchable: true
+    sortable: true
+  description:
+    label: "watchlearn.movies::lang.movie.description"
+    type: text
+    searchable: true
+    sortable: true
